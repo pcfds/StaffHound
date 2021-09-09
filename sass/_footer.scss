@@ -1,0 +1,17 @@
+footer {
+  background-color: green;
+
+  .footer {
+    display: flex;
+    justify-content: center;
+
+    .copy{
+      color: #ffc800;
+      font-size: 3rem;
+      letter-spacing: 2.5px;
+      font-family: "Roboto Slab";
+      margin-left: 8%;
+      text-align: center;
+    }
+  }
+}

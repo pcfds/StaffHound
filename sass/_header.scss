@@ -1,0 +1,37 @@
+header {
+    background-color: #212529;
+    .Nav-bar {
+        display: flex;
+        justify-content: space-between;
+        h1 {
+                color: #ffc800;
+                font-size: 2.7rem;
+                letter-spacing: 2.5px;
+                font-family: 'Roboto Slab';
+                margin-left: 8%;
+                text-align: center;
+        }
+        div {
+            nav {
+                ul {
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 20px;
+                    list-style: none;
+                    gap: 15px;
+                    li {
+                        a {
+                            text-decoration: none;
+                            color: #fff;
+                            font-family: 'Monserrat';
+                            font-size: 1.4rem;
+                            &:hover {
+                                color: #ffc800;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
