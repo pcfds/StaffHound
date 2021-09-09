@@ -1,3 +1,4 @@
+/*colores*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,100;1,200;1,300&display=swap");
@@ -11,6 +12,7 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+/*Header con NAVBAR*/
 header {
   background-color: #212529;
 }
@@ -51,61 +53,112 @@ header .Nav-bar div nav ul li a:hover {
 main {
   width: 100%;
   height: 100%;
+  /* BANNER */
+  /* BUSINESS MODEL */
+  /* CONTACTO */
 }
 
 main .banner {
+  width: 100%;
   text-align: center;
   background-image: url(../img/header-bg.jpg);
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
-  background-size: cover;
-  color: #fff;
+  background-size: contain;
+  color: black;
 }
 
 main .banner .container {
-  width: 100%;
-  padding-right: var(--bs-gutter-x, 0.75rem);
-  padding-left: var(--bs-gutter-x, 0.75rem);
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
   margin-right: auto;
   margin-left: auto;
-  height: 700px;
 }
 
-main .banner h2 {
+main .banner .container h2 {
   font-size: 4.5rem;
   font-weight: 700;
   line-height: 4.5rem;
-  margin-bottom: 4rem;
+  letter-spacing: 0.1rem;
 }
 
-main .banner h2 span {
+main .banner .container h2 span {
   font-size: 2.25rem;
   font-style: italic;
   line-height: 2.25rem;
   margin-bottom: 2rem;
 }
 
-main .banner a {
+main .banner .container a {
+  width: 20%;
+  display: inline-block;
   padding: 1.25rem 2.5rem;
   font-size: 1.125rem;
   font-weight: 700;
+  margin: 1.5rem 0rem;
+  line-height: 1.5;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  color: #fff;
+  background-color: #ffc800;
+  border-color: #ffc800;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+main .business h2 {
+  text-align: center;
+}
+
+main .business .container {
+  display: flex;
+  justify-content: space-around;
+}
+
+main .business .container .talent, main .business .container .sources {
+  width: 250px;
+}
+
+main .Contact {
+  display: flex;
+  direction: row;
+}
+
+main .Contact input {
+  height: 40px;
+  width: 400px;
+  border-radius: 10px;
+  padding-left: 10px;
 }
 
 footer {
-  background-color: green;
+  background-color: black;
 }
 
 footer .footer {
   display: flex;
-  justify-content: center;
+  justify-content: auto;
+}
+
+footer .footer .redes {
+  color: #fff;
+  font-size: 5rem;
+  letter-spacing: 1px;
+  font-family: "Roboto Slab";
+  text-align: center;
 }
 
 footer .footer .copy {
-  color: #ffc800;
-  font-size: 3rem;
+  color: #fff;
+  font-size: 2rem;
   letter-spacing: 2.5px;
   font-family: "Roboto Slab";
   margin-left: 8%;
-  text-align: center;
+  text-align: left;
 }

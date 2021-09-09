@@ -1,17 +1,26 @@
 footer {
-  background-color: green;
+  background-color: $quinto;
 
   .footer {
     display: flex;
-    justify-content: center;
+    justify-content: auto;
+   
+    .redes{
+      color: $segundo;
+      font-size: 5rem;
+      letter-spacing: 1px;
+      font-family: "Roboto Slab";
+      text-align: center;
+
+    }
 
     .copy{
-      color: #ffc800;
-      font-size: 3rem;
+      color: $segundo;
+      font-size: 2rem;
       letter-spacing: 2.5px;
       font-family: "Roboto Slab";
       margin-left: 8%;
-      text-align: center;
+      text-align: left;
     }
   }
 }
